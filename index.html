@@ -9,13 +9,16 @@
     </title>
 </head>
 <body>
-    <h2 id ="clock">00:00:00</h2>
-    <form id="login-form" class = "hidden" >
-        <input  required maxlength = "15" type = "text" placeholder="What is your Name?" />
-        <input type= "submit" value="Log In" />
+    <div class="header">
+        <span id ="blog-name">데이비드의 블로그</span>
+        <span id ="clock">00:00:00</span>
+        <span id ="menu">메뉴</span>
+    </div>
+    <form id="code-form" class = "hidden" >
+        <input  required maxlength = "15" type = "text" placeholder="코드를 입력하세요?" />
+        <input type= "submit" value="입력" />
     </form>
-    <h1 id ="greeting" class = "hidden"></h1>
-    <form id="todo-form">
+    <form id="todo-form" class = "hidden" >
         <input type="text" placeholder="할일을 작성하고 입력">
     </form>
     <ui id="todo-list">
@@ -31,7 +34,7 @@
         <span></span>
         <span></span>
     </div>
-    <script src="js/greetings.js"></script>
+    <script src="js/code.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>

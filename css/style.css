@@ -1,3 +1,43 @@
 .hidden {
     display: none;
 }
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.header {
+    text-align:center;
+}
+#blog-name {
+    font-size: 4em;
+    color:white;
+    text-align:left;
+}
+#clock {
+    font-size: 2em;
+    color:red;
+    margin:auto;
+    width:100%;
+}
+
+#menu {
+    font-size: 3em;
+    color:white;
+    text-align:right;
+}
+#todo-list {
+    font-size: 4em;
+    color:azure
+}
+
+#quote {
+    font-size: 2em;
+    color:azure
+}
+
+#weather {
+    font-size: 2em;
+    color:azure
+}
