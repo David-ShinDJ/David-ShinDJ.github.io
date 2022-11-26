@@ -7,37 +7,46 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-.header {
-    text-align:center;
-}
 #blog-name {
-    font-size: 4em;
+    display: inline-block;
+    font-size: 2em;
     color:white;
     text-align:left;
+    width:33%;
 }
 #clock {
+    display: inline-block;
     font-size: 2em;
     color:red;
     margin:auto;
-    width:100%;
+    width:33%;
 }
 
 #menu {
-    font-size: 3em;
+    display: inline-block;
+    font-size: 2em;
     color:white;
     text-align:right;
+    width:33%;
 }
 #todo-list {
-    font-size: 4em;
+    font-size: 3em;
     color:azure
 }
 
 #quote {
-    font-size: 2em;
-    color:azure
+    font-size: 1em;
+    color:azure;
+    display: inline-block;
+    position:fixed;
+    bottom:0;
 }
 
 #weather {
-    font-size: 2em;
-    color:azure
+    font-size: 1em;
+    color:azure;
+    display: inline-block;
+    position:fixed;
+    bottom:0;
+    right:0;
 }

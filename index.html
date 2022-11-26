@@ -4,41 +4,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>
-        Momenturm
+        David-Blog
     </title>
 </head>
 <body>
-    <div class="header">
-        <span id ="blog-name">데이비드의 블로그</span>
-        <span id ="clock">00:00:00</span>
-        <span id ="menu">메뉴</span>
+    <header class="header">
+        <div class="text-start"id ="blog-name">데이비드의 블로그</div>
+        <div class="text-center"id ="clock" >00:00:00</div>
+        <div class="text-end"id ="menu">메뉴</div>
+    </header>
+
+    <div class="container text-center">
+        <div class="row">
+          <div class="col auth-section">
+            <form id="code-form" >
+                <input  required maxlength = "15" type = "text" placeholder="코드를 입력하세요?" />
+                <input type= "submit" value="입력" />
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col tool-section">
+            <h3>Open AI Section</h3>
+          </div>
+          <div class="col tool-section">
+            <form id="todo-form" >
+                <input type="text" placeholder="할일을 작성하고 입력">
+            </form>
+            <ui id="todo-list">
+                
+            </ui>
+          </div>
+          <div class="col tool-section">
+            <h3>Other Section</h3>
+          </div>
+        </div>
     </div>
-    <form id="code-form" class = "hidden" >
-        <input  required maxlength = "15" type = "text" placeholder="코드를 입력하세요?" />
-        <input type= "submit" value="입력" />
-    </form>
-    <form id="todo-form" class = "hidden" >
-        <input type="text" placeholder="할일을 작성하고 입력">
-    </form>
-    <ui id="todo-list">
-        
-    </ui>
-    <div id="quote">
-        <span>
+
+    <footer class="footer">
+        <span class="text-start"id="quote">
+            <div>명언</div>
+            <div>명언자</div>
         </span>
-        <span>
+        <span class="text-end"id="weather">
+            <div>장소</div>
+            <div>날씨</div>
         </span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
-    <script src="js/code.js"></script>
+    </footer>
+    <script src="js/auth.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
+    <script src="js/tool.js"></script>
     <script src="js/weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
