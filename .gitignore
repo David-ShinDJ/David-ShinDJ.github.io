@@ -1,0 +1,41 @@
+# 모든 확장자 .a 파일을 무시
+*.a
+ 
+# 무시하는 모든 확장자 .a 파일들 중에서 lib.a 파일은 무시하지 않음
+!lib.a
+ 
+# Project/
+#  ㄴ.gitignore
+#  ㄴA/
+#    ㄴa.txt
+#    ㄴTODO/
+#      ㄴtt.txt
+#  ㄴTODO/
+#    ㄴt.txt
+#
+# 현재 폴더 중에서 TODO 폴더에 있는 모든 파일을 무시
+# (즉, t.txt 파일만 무시되고 tt.txt 파일은 무시되지 않음)
+/APIKEYS
+
+ 
+# 프로젝트 전체 폴더 중 TODO라는 폴더명을 사용하는 TODO 폴더의 하위 파일은 모두 무시
+# (즉, t.txt 파일과 tt.txt 파일 모두 무시됨)
+TODO/
+ 
+# Project/
+#  ㄴ.gitignore
+#  ㄴdoc/
+#    ㄴd.txt
+#    ㄴp.pdf
+#    ㄴserver/
+#      ㄴss.txt
+#      ㄴpp.pdf
+#
+# 현재 폴더 중에서 doc 폴더 바로 밑에 있는 .txt 확장자 파일만 모두 무시
+# 단, doc/server/ss.txt 와 같은 형식에서는 .txt 확장자 파일이 무시되지 않음
+doc/*.txt
+ 
+# 현재 폴더 중에서 doc 폴더 하위에 있는 .pdf 확장자 파일은
+# doc 폴더 하위 어떤 폴더에 들어 있더라도 모두 무시
+# (즉, p.pdf 파일과 pp.pdf 파일 모두 무시됨)
+doc/**/*.pdf

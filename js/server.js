@@ -1,9 +1,6 @@
 
 
-const OPEN_API_KEY = "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"
 const port = 3000
-const NAVER_CLIENT_ID = "eOXk_4ITmPMWybfjduQo"
-const NAVER_CLIENT_SECRET = "OLbstU4jyL"
 
 var express = require('express');
 var app = express();
