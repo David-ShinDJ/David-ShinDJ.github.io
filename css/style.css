@@ -50,3 +50,10 @@ body {
     bottom:0;
     right:0;
 }
+
+
+.chat-content { height: 350px;  overflow-y: scroll }
+.line { margin-top: 15px; display: flex }
+.chat-box { background: #eee; padding: 5px;
+  max-width: 200px }
+.mine { margin-left: auto }

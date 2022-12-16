@@ -1,6 +1,6 @@
 
 const authSection = document.querySelector(".auth-section");
-const toolSection = document.querySelectorAll(".tool-section")
+const toolSection = document.querySelectorAll(".cetified-section")
 const codeForm = document.querySelector("#code-form");
 const codeInput = codeForm.querySelector("#code-form input");
 const HIDDEN_CLASSNAME = "hidden"
