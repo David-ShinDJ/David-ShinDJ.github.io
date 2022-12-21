@@ -1,7 +1,6 @@
 
-
 const port = 3000
-
+var apiKey = require('../Ignores/apiKey.js')
 var express = require('express');
 var app = express();
 var cors = require('cors');
@@ -10,7 +9,7 @@ var { OpenAIApi, Configuration} = require('openai');
 app.use(cors())
 
 let config = new Configuration({
-    apiKey: OPEN_API_KEY,
+    apiKey: apiKey.OPEN_API_KEY
 });
 let openai = new OpenAIApi(config);
 
@@ -45,7 +44,7 @@ app.get('/translate', (req, res) => {
     var options = {
         url: api_url,
         form: {'source':'ko', 'target':'en', 'text':query},
-        headers: {'X-Naver-Client-Id':NAVER_CLIENT_ID, 'X-Naver-Client-Secret': NAVER_CLIENT_SECRET}
+        headers: {'X-Naver-Client-Id':apiKey.NAVER_CLIENT_ID, 'X-Naver-Client-Secret': apiKey.NAVER_CLIENT_SECRET}
      };
 
     request.post(options, (error, response, body) => {
@@ -68,7 +67,7 @@ app.get('/translate', (req, res) => {
             var options = {
                 url: api_url,
                 form: {'source':'en', 'target':'ko', 'text':query},
-                headers: {'X-Naver-Client-Id':NAVER_CLIENT_ID, 'X-Naver-Client-Secret': NAVER_CLIENT_SECRET}
+                headers: {'X-Naver-Client-Id':apiKey.NAVER_CLIENT_ID, 'X-Naver-Client-Secret': apiKey.NAVER_CLIENT_SECRET}
             };
             request.post(options, (error, response, body) => {
                 console.log(body);
@@ -80,7 +79,6 @@ app.get('/translate', (req, res) => {
         })
     });
 });
-
 
 
 app.listen(port, () => {
