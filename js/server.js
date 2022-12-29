@@ -17,6 +17,9 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 });
 
+app.get('/test', (req, res) => {
+    res.send("David")
+})
 
 
 app.get('/english/:value', (req, res) => {
