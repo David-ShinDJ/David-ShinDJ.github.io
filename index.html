@@ -15,62 +15,62 @@
         <div class="text-center"id ="clock" >00:00:00</div>
         <div class="text-end"id ="menu">메뉴</div>
     </header>
-    <div class ="container text-center">
-      <div class="col auth-section">
-        <form id="code-form" >
-            <input  required maxlength = "15" type = "text" placeholder="코드를 입력하세요?" />
-            <input type= "submit" value="입력" />
-        </form>
-    </div>
-    </div>
-
-    <div class="container text-center">
-      <div class="row">
-
-        <div class="col cetified-section">
-          <div id="api-section">
-            <h1 id="api-response"></h1>
-            <input type="text" placeholder="API요청값">
-            <button id="api-button">API요청</button>
-          </div>
-        </div>
-
-        <div class="col cetified-section">
-          <div id="chat-section">
-            <div class="chat-content">
-              <div class="line">
-                <span class="chat-box">안녕?</span>
-              </div>
-              <div class="line">
-                <span class="chat-box mine">안녕?</span>
-              </div>
+    <div class="content">
+      <div class ="container text-center">
+        <div class="col auth-section">
+          <form id="code-form" >
+              <input  required maxlength = "15" type = "text" placeholder="코드를 입력하세요?" />
+              <input type= "submit" value="입력" />
+          </form>
+      </div>
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col cetified-section">
+            <div id="api-section">
+              <h1 id="api-response"></h1>
+              <input type="text" placeholder="API요청값">
+              <button id="api-button">API요청</button>
             </div>
-            <input class="chat-box" id="input">
-            <button id="send">전송</button>
           </div>
-        </div>
-
-        <div class="col cetified-section">
-          <div id="todo-section">
-            <form id="todo-form" >
-                <input type="text" placeholder="할일을 작성하고 입력">
-            </form>
-            <ui id="todo-list">
-            </ui>
+  
+          <div class="col cetified-section">
+            <div id="chat-section">
+              <div class="chat-content">
+                <div class="line">
+                  <span class="chat-box">안녕?</span>
+                </div>
+                <div class="line">
+                  <span class="chat-box mine">안녕?</span>
+                </div>
+              </div>
+              <input class="chat-box" id="input">
+              <button id="send">전송</button>
+            </div>
+          </div>
+          <div class="col cetified-section">
+            <div id="todo-section">
+              <form id="todo-form" >
+                  <input type="text" placeholder="할일을 작성하고 입력">
+              </form>
+              <ui id="todo-list">
+              </ui>
+          </div>
         </div>
       </div>
     </div>
-
-    <footer class="footer">
-        <span class="text-start"id="quote">
-            <div>명언</div>
-            <div>명언자</div>
-        </span>
-        <span class="text-end"id="weather">
-            <div>장소</div>
-            <div>날씨</div>
-        </span>
+      </div>
+    </div>
+    <footer>
+      <div class="text-start"id="quote">
+        <div>명언</div>
+        <div>명언자</div>
+      </div>
+      <div class="text-end"id="weather">
+        <div>장소</div>
+        <div>날씨</div>
+      </div>
     </footer>
+
     <script src="js/auth.js"></script>
     <script src="js/chat.js"></script>
     <script src="js/clock.js"></script>
