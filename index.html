@@ -13,7 +13,18 @@
     <header class="header">
         <div class="text-start"id ="blog-name">데이비드의 블로그</div>
         <div class="text-center"id ="clock" >00:00:00</div>
-        <div class="text-end"id ="menu">메뉴</div>
+        <div class="text-end"id ="menu">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              메뉴
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./write.html">글작성</a></li>
+              <li><a class="dropdown-item" href="./register.html">블로그가입</a></li>
+              <li><a class="dropdown-item" href="https://github.com/David-ShinDJ/RootRepository">깃허브링크</a></li>
+            </ul>
+          </div>
+        </div>
     </header>
     <div class="content">
       <div class ="container text-center">
@@ -56,7 +67,32 @@
               </ui>
           </div>
         </div>
+        <div calss="container text-center">
+          <div class="row align-items-center">
+            <div class="card col-lg-3 mt-5 me-3 ms-3">
+              <div class="card-body" onclick="location.href='./post.html'">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <img src="..." class="card-img-bottom" alt="...">
+          </div>
+          <div class="card col-lg-3 mt-5 me-3 ms-3">
+            <div class="card-body" onclick="location.href='./post.html'">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <img src="..." class="card-img-bottom" alt="...">
+          </div>
+        <div class="card col-lg-3 mt-5 me-3 ms-3">
+          <div class="card-body" onclick="location.href='./post.html'">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <img src="..." class="card-img-bottom" alt="...">
+        </div>
+            
       </div>
+        </div>
     </div>
       </div>
     </div>
